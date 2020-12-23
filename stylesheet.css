@@ -1,0 +1,322 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN";
+  background-color: black;
+  width:1000px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.fadein {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  position:fixed;
+  top:0;
+  z-index:10;
+  border-bottom:1px solid #eee;
+}
+
+.header-left {
+  float:left;
+}
+
+.header-logo {
+  color:white;
+  font-family: 'Herr Von Muellerhoff', cursive;
+  display:inline-block;
+  line-height:65px;
+  font-size:40px;
+  letter-spacing:3px;
+  cursor:pointer;
+}
+
+.header-right {
+  float:right;
+  transition: all 0.5s;
+}
+
+.header-right a {
+  color:white;
+  display:inline-block;
+  margin-right:15px;
+  opacity:0.5;
+  line-height:65px;
+  transition:all 0.5s;
+}
+
+.header-right a:hover {
+  opacity:1;
+}
+
+.top-wrapper {
+  height:800px;
+  position:relative;
+  color: white;
+}
+
+.top-left {
+  line-height:left;
+}
+
+.top-left p{
+  font-size:20px;
+  writing-mode: vertical-rl;
+  position:absolute;
+  top:260px;
+  left:80px;
+}
+
+.top-right {
+  text-align: right;
+  position:absolute;
+  top:90px;
+  left:380px;
+  position:relative;
+}
+
+h1 {
+  font-size:110px;
+  font-weight:normal;
+  letter-spacing:6px;
+  font-family: 'Herr Von Muellerhoff', cursive;
+  position:absolute;
+  top:210px;
+  left:300px;
+}
+
+.runwayImg {
+  width:1020px;
+  height:695px;
+}
+
+.about-wrapper {
+  height:800px;
+  position: relative;
+  color:white;
+}
+
+.about-left {
+  width:50%;
+}
+
+.about-right {
+  width:50%;
+  position:absolute;
+  top:80px;
+  left:750px;
+}
+
+.aboutImg {
+  width:510px;
+  height:695px;
+  position:absolute;
+  top:50px;
+  left:100px;
+}
+
+
+h2 {
+  font-weight:normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2:before, h2:after {
+  border-top: 1px solid;
+  content: "";
+  width: 3em;
+}
+
+h2:before {
+  margin-right: 1em;
+}
+
+h2:after {
+  margin-left: 1em;
+}
+
+p {
+  text-align:center;
+}
+
+.talkImg {
+  width:610px;
+  height:420px;
+  position:absolute;
+  top:200px;
+
+}
+
+.target-wrapper {
+  height:800px;
+  position: relative;
+  color:white;
+}
+
+.target-left {
+  width:50%;
+  position:absolute;
+  top:80px;
+  left:80px;
+}
+
+.target-right {
+  width:50%;
+}
+
+.targetImg {
+  width:530px;
+  height:695px;
+  position:absolute;
+  top:80px;
+  left:780px;
+}
+
+.whom {
+  margin-top:80px;
+  margin-left:30px;
+  text-align:center;
+  font-size:38px;
+}
+
+.point-wrapper {
+  height:800px;
+  position: relative;
+  color:white;
+}
+
+.point-left {
+  width:50%;
+}
+
+.pointImg {
+  width:510px;
+  height:695px;
+  position:absolute;
+  top:80px;
+  left:100px;
+}
+
+.point-right {
+  width:50%;
+  position:absolute;
+  top:80px;
+  left:750px;
+  position:relative;
+}
+
+.sub-btn {
+  color:white;
+  font-size:30px;
+  border-radius:5px;
+  opacity:0.5;
+  transition:all 0.5s;
+  display:inline-block;
+  position:absolute;
+  top:400px;
+  left:240px;
+}
+
+.sub-btn:hover {
+  opacity:1;
+}
+
+
+.producer-wrapper {
+  height:800px;
+  color:white;
+  position: relative;
+}
+
+.producer-left {
+  width:30%;
+  position:absolute;
+  top:300px;
+  left:20px;
+  writing-mode: vertical-rl;
+  font-size:70px;
+}
+
+
+.producer-right {
+  width:70%;
+  position:absolute;
+  top:310px;
+  left:680px;
+  position:relative;
+}
+
+.name{
+font-size:35px;
+}
+
+ul {
+  margin-top:70px;
+}
+
+li {
+  margin-top:30px;
+}
+
+.sns-btn {
+  position:absolute;
+  top:290px;
+  left:20px;
+}
+
+.sns {
+  color:white;
+  margin:0 10px;
+  opacity:0.5;
+  transition:all 0.5s;
+}
+
+.sns:hover {
+  opacity:1;
+}
+
+.fa-large {
+  font-size:25px;
+}
+
+.start {
+  color:white;
+	background-color:black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start h1 {
+	position: fixed;
+  top:385px;
+  left:843px;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
