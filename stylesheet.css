@@ -4,6 +4,12 @@ body {
   width:1000px;
 }
 
+@media(max-width:670px){
+  body {
+    width:670px;
+  }
+}
+
 *{
   box-sizing: border-box;
 }
